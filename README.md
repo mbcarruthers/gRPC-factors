@@ -1,6 +1,6 @@
 # gRPC server-side stream 
 
-server side RPC that streams factors of a number sent from the
+server side RPC that streams prime factors of a number sent from the
 client.
 
 #### To Build:
