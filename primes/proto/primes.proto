@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package primes;
+
+option go_package = "github.com/mbcarruthers/gRPCprimes/primes/proto";
+
+message PrimesRequest {
+  int64 primes_arg = 1;
+}
+
+message PrimesResponse {
+  int64 primes_result = 1;
+}
+
+service PrimesService {
+  rpc Calculate(PrimesRequest) returns (stream PrimesResponse);
+}
